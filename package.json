@@ -1,0 +1,32 @@
+{
+  "name": "abstract-events-website",
+  "version": "1.0.0",
+  "description": "Demo site for abstract-events",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack --mode=development & http-server dist/",
+    "build": "webpack --mode=production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zachnology/abstract-events-website.git"
+  },
+  "author": "zachnology",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zachnology/abstract-events-website/issues"
+  },
+  "homepage": "https://github.com/zachnology/abstract-events-website#readme",
+  "devDependencies": {
+    "css-loader": "^6.2.0",
+    "http-server": "^13.0.0",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.50.0",
+    "webpack-cli": "^4.7.2"
+  },
+  "dependencies": {
+    "abstract-events": "0.0.2-alpha",
+    "bootstrap": "^5.1.0"
+  }
+}
