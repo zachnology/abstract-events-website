@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1">Abstract Events Demo</span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container px-4 py-5" id="featured-3">
+        <h2 class="pb-2 border-bottom">Count Events</h2>
+        <div class="row g-6 py-5 mb-5 row-cols-1 row-cols-lg-2">
+            <div class="feature col">
+                <h2>Basic click count</h2>
+                <p>Click the button below 4 times. Take as much time as you'd like between clicks.</p>
+                <div class="d-grid gap-2">
+                    <button id="btnClickMe" class="btn btn-primary btn-lg">CLICK ME SLOW</button>
+                </div>
+            </div>
+            
+            <div class="feature col">
+                <h2>Click count with timeout</h2>
+                <p>Click the button below 4 times within 1.5 seconds. If you take longer the, event will not be raised.</p>
+                <div class="d-grid gap-2">
+                    <button id="btnClickMeFast" class="btn btn-primary btn-lg">CLICK ME FAST</button>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="pb-2 border-bottom">Phrase Events</h2>
+        <div class="row g-6 py-5 row-cols-1 row-cols-lg-2">
+            <div class="feature col">
+                <h2>Basic key phrase</h2>
+                <p>Type the word 'secret'. No need to focus on an input element. Take as much time as you'd like.</p>
+            </div>
+            
+            <div class="feature col">
+                <h2>Key phrase with timeout</h2>
+                <p>Type the word 'faster' in 1.5 seconds. If you take longer, the event will not be raised. No need to focus on an input element.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
